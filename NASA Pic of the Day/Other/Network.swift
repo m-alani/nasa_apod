@@ -7,3 +7,14 @@
 //
 
 import Foundation
+import UIKit
+
+func getImageDetails() -> ApodResponse? {
+  
+  return nil
+}
+
+func getImage(from url: URL) -> UIImage? {
+  
+  return nil
+}
