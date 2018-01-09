@@ -13,6 +13,9 @@
 		8D53CBDB20057DC0008B7C6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D53CBDA20057DC0008B7C6B /* Assets.xcassets */; };
 		8D53CBDE20057DC1008B7C6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D53CBDC20057DC1008B7C6B /* LaunchScreen.storyboard */; };
 		8D53CBE920057DC1008B7C6B /* NASA_Pic_of_the_DayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D53CBE820057DC1008B7C6B /* NASA_Pic_of_the_DayTests.swift */; };
+		8D53CBF820057E1D008B7C6B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D53CBF720057E1D008B7C6B /* Config.swift */; };
+		8D53CBFA20057FBE008B7C6B /* NASA Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D53CBF920057FBE008B7C6B /* NASA Response.swift */; };
+		8D53CBFC200581FA008B7C6B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D53CBFB200581FA008B7C6B /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		8D53CBE420057DC1008B7C6B /* NASA Pic of the DayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NASA Pic of the DayTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D53CBE820057DC1008B7C6B /* NASA_Pic_of_the_DayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA_Pic_of_the_DayTests.swift; sourceTree = "<group>"; };
 		8D53CBEA20057DC1008B7C6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D53CBF720057E1D008B7C6B /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		8D53CBF920057FBE008B7C6B /* NASA Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NASA Response.swift"; sourceTree = "<group>"; };
+		8D53CBFB200581FA008B7C6B /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +83,10 @@
 		8D53CBD220057DC0008B7C6B /* NASA Pic of the Day */ = {
 			isa = PBXGroup;
 			children = (
-				8D53CBD320057DC0008B7C6B /* AppDelegate.swift */,
-				8D53CBD520057DC0008B7C6B /* ViewController.swift */,
+				8D53CBF620057DE8008B7C6B /* Other */,
+				8D53CBF520057DE1008B7C6B /* Models */,
+				8D53CBF420057DD7008B7C6B /* Controllers */,
+				8D53CBF320057DCE008B7C6B /* Views */,
 				8D53CBD720057DC0008B7C6B /* Main.storyboard */,
 				8D53CBDA20057DC0008B7C6B /* Assets.xcassets */,
 				8D53CBDC20057DC1008B7C6B /* LaunchScreen.storyboard */,
@@ -94,6 +102,39 @@
 				8D53CBEA20057DC1008B7C6B /* Info.plist */,
 			);
 			path = "NASA Pic of the DayTests";
+			sourceTree = "<group>";
+		};
+		8D53CBF320057DCE008B7C6B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8D53CBF420057DD7008B7C6B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D53CBD520057DC0008B7C6B /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8D53CBF520057DE1008B7C6B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D53CBF920057FBE008B7C6B /* NASA Response.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8D53CBF620057DE8008B7C6B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				8D53CBFB200581FA008B7C6B /* Network.swift */,
+				8D53CBF720057E1D008B7C6B /* Config.swift */,
+				8D53CBD320057DC0008B7C6B /* AppDelegate.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +240,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D53CBFC200581FA008B7C6B /* Network.swift in Sources */,
+				8D53CBFA20057FBE008B7C6B /* NASA Response.swift in Sources */,
 				8D53CBD620057DC0008B7C6B /* ViewController.swift in Sources */,
 				8D53CBD420057DC0008B7C6B /* AppDelegate.swift in Sources */,
+				8D53CBF820057E1D008B7C6B /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
