@@ -9,11 +9,17 @@
 import Foundation
 
 struct CONFIG {
-  public struct NASA {
+  struct NASA {
     static let PROTOCOL = "https"
     static let DOMAIN = "api.nasa.gov"
     static let PATH = "planetary"
     static let ENDPOINT = "apod"
     static let API_KEY = "NNKOjkoul8n1CH18TWA9gwngW1s1SmjESPjNoUFo"
   }
+  
+  struct NOTIFICATION_KEYS {
+    static let UPDATE_PIC_OBJECT = "ca.alani.mainViewController.updateImage"
+  }
+  static let LOGGING_ENABLED = false
 }
+

@@ -1,5 +1,5 @@
 //
-//  NASA Response.swift
+//  PicOfTheDay.swift
 //  NASA Pic of the Day
 //
 //  Created by Marwan Al-ani on 1/9/18.
@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import UIKit
 
-struct ApodResponse : Decodable {
+struct PicOfTheDay {
   var title: String
-  var url: String
+  var image: UIImage
 }

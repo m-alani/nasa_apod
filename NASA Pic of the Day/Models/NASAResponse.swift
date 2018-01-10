@@ -1,5 +1,5 @@
 //
-//  Helper.swift
+//  NASAResponse.swift
 //  NASA Pic of the Day
 //
 //  Created by Marwan Al-ani on 1/9/18.
@@ -8,12 +8,7 @@
 
 import Foundation
 
-func showError(_ errorCode: Int) {
-  print(errorCode)
-}
-
-func log(_ str: String) {
-  if CONFIG.LOGGING_ENABLED {
-    print(str)
-  }
+struct ApodResponse : Decodable {
+  var title: String
+  var url: String
 }
