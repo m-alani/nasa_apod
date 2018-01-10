@@ -8,7 +8,7 @@ The project was built for Scotiabank as a step in the application process for an
 ### Notes about the submitted code
 - The code was organized using a standard MVC pattern, with all other functionality that doesn't fit into te pattern being put in the "Other" folder
 - The custom fade animation for the image title is very visible with the default 0.35 seconds time, consider increasing that number (through the "config" file) to over 1 second to make a visible difference
-- Given the simple nature of the app and its functionality, I decided not to invest much time in writing Unit Tests. Instead, I wrote a sample case just to demonstrate the ability to test asynchronous code
+- Given the simple nature of the app and its functionality, I decided not to invest much time in writing Unit Tests. Instead, I wrote few sample cases to demonstrate my ability to test some of the tricky situations (Async calls, and ViewControllers) a developer might encounter while writing test cases
 - While XCode does provide the means to do simple UI testing, I did not see the point of implementing any UI tests without having a strict UI design (UI tests are usually written with help from the design team)
 - Realistically, 3-6 hours are more than enough to put together an app that does the exact same functionality. I have spent a bit more time thought, just because I prefer to write maintainable code (it's clear that it's an overkill in this case, but that's how I prefer to write code)
 

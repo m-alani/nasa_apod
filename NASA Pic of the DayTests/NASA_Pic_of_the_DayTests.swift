@@ -10,18 +10,24 @@ import XCTest
 @testable import NASA_Pic_of_the_Day
 
 class NASA_Pic_of_the_DayTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-    }
-    
-    override func tearDown() {
-        super.tearDown()
-    }
   
+  var viewController: ViewController!
+  
+  override func setUp() {
+    super.setUp()
+    
+    // Instantiate the main view controller and load it up
+    let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+    viewController = storyBoard.instantiateInitialViewController() as! ViewController
+    let _ = viewController.view // Nifty trick to invoke viewDidLoad, and keep things in memory
+  }
+  
+  override func tearDown() {
+      super.tearDown()
+  }
+
   // Sample test case to demonstrate async unit testing
   func testNasaServerUp() {
-    
     let expectation = XCTestExpectation(description: "Hit NASA's Endpoint with no API key")
     
     let url = URL(string: "https://api.nasa.gov/planetary/apod")!
@@ -34,6 +40,11 @@ class NASA_Pic_of_the_DayTests: XCTestCase {
     }
     dataTask.resume()
     wait(for: [expectation], timeout: CONFIG.TESTS_TIMEOUT)
+  }
+  
+  // Sample test case using a loaded view controller
+  func testMainViewLoadEvent() {
+    XCTAssert(viewController.pictureObject == nil , "Image object should be nil before any network calls happen")
   }
     
 }
