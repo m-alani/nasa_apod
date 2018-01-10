@@ -27,6 +27,7 @@ struct CONFIG {
   }
   
   static let LOGGING_ENABLED = false
-  static let ANIMATION_DURATION = 0.35
+  static let ANIMATION_DURATION = 0.35 // in seconds
+  static let TESTS_TIMEOUT = 10.0 // in seconds
 }
 

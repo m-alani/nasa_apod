@@ -50,6 +50,7 @@
 		8DE4F940200588A200A78CBC /* PicOfTheDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicOfTheDay.swift; sourceTree = "<group>"; };
 		8DE4F9422005DC7F00A78CBC /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		8DE4F9462005F05600A78CBC /* FullscreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullscreenViewController.swift; sourceTree = "<group>"; };
+		8DE4F9482005F84F00A78CBC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +74,7 @@
 		8D53CBC720057DC0008B7C6B = {
 			isa = PBXGroup;
 			children = (
+				8DE4F9482005F84F00A78CBC /* README.md */,
 				8D53CBD220057DC0008B7C6B /* NASA Pic of the Day */,
 				8D53CBE720057DC1008B7C6B /* NASA Pic of the DayTests */,
 				8D53CBD120057DC0008B7C6B /* Products */,
