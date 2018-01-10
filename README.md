@@ -15,7 +15,7 @@ The project was built for Scotiabank as a step in the application process for an
 
 -----
 ### Things to be added (if more time is available)
-- More tests. Mainly for model consistency and network async calls.
+- More tests. Mainly for model consistency and more network async calls.
 - Implement simple caching with a timestamp, probably though CoreData (Download the same image over & over again is a waste of network resources, given that NASA changes the picture only once a day )
 - Implement a different transition effect where the fullscreen image view zooms in from the centre rather than slide up modally (I think this was the initial idea on your end? The instructions weren't clear enough)
 - Have a quick discussion with the UI person in charge! perhaps we should add a title bar and an icon set for the app?
