@@ -10,8 +10,10 @@ import Foundation
 import UIKit
 
 func showError(_ errorCode: Int) {
+  // Get the root view controller of the app so we can push an alert view with the error on top
   guard let view = UIApplication.shared.keyWindow?.rootViewController else { return }
-  let alertController = UIAlertController(title: "Ops!", message: "Something went wrong! Please launch the app again :(\nError code: \(errorCode)", preferredStyle: .alert)
+  let alertController = UIAlertController(title: CONFIG.ERROR.DEFAULT_TITLE,
+    message: "\(CONFIG.ERROR.DEFAULT_MSG)\nError code: \(errorCode)", preferredStyle: .alert)
   let defaultAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in
     exit(0)
   }

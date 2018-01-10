@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,16 +16,16 @@
             <objects>
                 <viewController title="Main View" id="BYZ-38-t0r" customClass="ViewController" customModule="NASA_Pic_of_the_Day" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2n0-Fw-q1y">
-                                <rect key="frame" x="16" y="166.5" width="343" height="333.5"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2n0-Fw-q1y">
+                                <rect key="frame" x="0.0" y="208.33333333333337" width="375" height="406"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yte-bG-pha">
-                                <rect key="frame" x="16" y="508" width="343" height="32"/>
+                                <rect key="frame" x="0.0" y="622.33333333333337" width="375" height="32"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="f6M-Au-oI3"/>
+                                    <constraint firstAttribute="height" constant="32" id="IGA-n0-OKQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -34,13 +34,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Yte-bG-pha" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7hQ-cQ-LU3"/>
-                            <constraint firstItem="Yte-bG-pha" firstAttribute="top" secondItem="2n0-Fw-q1y" secondAttribute="bottom" constant="8" id="Bfq-VQ-Vk5"/>
-                            <constraint firstItem="2n0-Fw-q1y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bLe-c4-1aZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yte-bG-pha" secondAttribute="trailing" constant="16" id="f0l-ya-bBM"/>
-                            <constraint firstItem="2n0-Fw-q1y" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="faC-sQ-OKH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2n0-Fw-q1y" secondAttribute="trailing" constant="16" id="nCc-Ei-IJb"/>
-                            <constraint firstItem="2n0-Fw-q1y" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="wDa-Xd-NEH"/>
+                            <constraint firstItem="2n0-Fw-q1y" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="9zd-DB-xzR"/>
+                            <constraint firstItem="Yte-bG-pha" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DFa-aF-WHX"/>
+                            <constraint firstItem="2n0-Fw-q1y" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GFp-Fw-0Lz"/>
+                            <constraint firstItem="2n0-Fw-q1y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nsr-PQ-jVw"/>
+                            <constraint firstItem="Yte-bG-pha" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Q1o-nh-8vV"/>
+                            <constraint firstItem="2n0-Fw-q1y" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="kgp-mf-zD5"/>
+                            <constraint firstItem="Yte-bG-pha" firstAttribute="top" secondItem="2n0-Fw-q1y" secondAttribute="bottom" constant="8" id="oNN-iy-KA7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -51,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="136.80000000000001" y="133.00492610837438"/>
         </scene>
     </scenes>
 </document>

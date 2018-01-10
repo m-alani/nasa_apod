@@ -20,6 +20,11 @@ struct CONFIG {
   struct NOTIFICATION_KEYS {
     static let UPDATE_PIC_OBJECT = "ca.alani.mainViewController.updateImage"
   }
+  
+  struct ERROR {
+    static let DEFAULT_MSG = "Something went wrong! Please launch the app again :("
+    static let DEFAULT_TITLE = "Ops!"
+  }
   static let LOGGING_ENABLED = false
 }
 
