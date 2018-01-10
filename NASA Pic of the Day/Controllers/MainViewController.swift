@@ -13,12 +13,20 @@ class ViewController: UIViewController {
   @IBOutlet weak var imageContent: UIImageView!
   @IBOutlet weak var imageTitle: UILabel!
   
-  
   var pictureObject: PicOfTheDay?
   var spinnerView: UIView?
 
+  override func viewWillAppear(_ animated: Bool) {
+    animateTitleIn()
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    // UIImageView has no actions, so we need to assign a gesture recognizer to mimic the functionality
+    let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+    imageContent.isUserInteractionEnabled = true
+    imageContent.addGestureRecognizer(tapGestureRecognizer)
     
     // Add an observer
     let name = Notification.Name(rawValue: CONFIG.NOTIFICATION_KEYS.UPDATE_PIC_OBJECT)
@@ -63,6 +71,39 @@ class ViewController: UIViewController {
     if let spinner = self.spinnerView {
       UIViewController.removeSpinner(spinner: spinner)
     }
+  }
+  
+  // Handle a tap on the image
+  @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
+  {
+    // Check that the user didn't tap an empty image before we download anything
+    guard pictureObject != nil else { return }
+    
+    // Transition to the fullscreen view
+    animateTitleOut()
+    performSegue(withIdentifier: "goFullscreen", sender: self)
+    
+  }
+  
+  // Hide the title
+  func animateTitleOut() {
+    UIView.animate(withDuration: CONFIG.ANIMATION_DURATION, animations: {
+      self.imageTitle.alpha = 0
+    })
+  }
+  
+  // Show the title
+  func animateTitleIn() {
+    UIView.animate(withDuration: CONFIG.ANIMATION_DURATION, animations: {
+      self.imageTitle.alpha = 1.0
+    })
+  }
+  
+  // Pass the image to the fullscreen view
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    // Safe to force cast here, because we have no other segue/VC to transition to
+    let dest = segue.destination as! FullscreenViewController
+    dest.image = pictureObject?.image
   }
   
   // Clean up the observer we set up

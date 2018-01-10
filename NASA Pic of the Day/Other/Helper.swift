@@ -24,6 +24,7 @@ func showError(_ errorCode: Int) {
   print(errorCode)
 }
 
+// Custom function for logging (wasn't used on this submission)
 func log(_ str: String) {
   if CONFIG.LOGGING_ENABLED {
     print(str)

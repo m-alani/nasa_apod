@@ -19,6 +19,7 @@
 		8DE4F93F200586BD00A78CBC /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4F93E200586BD00A78CBC /* Helper.swift */; };
 		8DE4F941200588A200A78CBC /* PicOfTheDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4F940200588A200A78CBC /* PicOfTheDay.swift */; };
 		8DE4F9432005DC7F00A78CBC /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4F9422005DC7F00A78CBC /* Spinner.swift */; };
+		8DE4F9472005F05600A78CBC /* FullscreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4F9462005F05600A78CBC /* FullscreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		8DE4F93E200586BD00A78CBC /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		8DE4F940200588A200A78CBC /* PicOfTheDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicOfTheDay.swift; sourceTree = "<group>"; };
 		8DE4F9422005DC7F00A78CBC /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		8DE4F9462005F05600A78CBC /* FullscreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullscreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				8D53CBD520057DC0008B7C6B /* MainViewController.swift */,
+				8DE4F9462005F05600A78CBC /* FullscreenViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D53CBFC200581FA008B7C6B /* Network.swift in Sources */,
+				8DE4F9472005F05600A78CBC /* FullscreenViewController.swift in Sources */,
 				8D53CBFA20057FBE008B7C6B /* NASAResponse.swift in Sources */,
 				8D53CBD620057DC0008B7C6B /* MainViewController.swift in Sources */,
 				8DE4F941200588A200A78CBC /* PicOfTheDay.swift in Sources */,
