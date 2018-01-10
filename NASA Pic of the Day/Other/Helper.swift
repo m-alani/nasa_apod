@@ -20,8 +20,6 @@ func showError(_ errorCode: Int) {
 
   alertController.addAction(defaultAction)
   view.present(alertController, animated: true, completion: nil)
-  
-  print(errorCode)
 }
 
 // Custom function for logging (wasn't used on this submission)
