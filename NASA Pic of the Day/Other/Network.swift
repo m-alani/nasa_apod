@@ -61,4 +61,6 @@ func getImage(from url: URL, meta apodResponse: ApodResponse, callback cb: @esca
 
 func postPictureObject(_ image: UIImage, _ nasaResponse: ApodResponse) {
   let object = PicOfTheDay(title: nasaResponse.title, image: image)
+  let name = NSNotification.Name(CONFIG.NOTIFICATION_KEYS.UPDATE_PIC_OBJECT)
+  NotificationCenter.default.post(name: name, object: object)
 }

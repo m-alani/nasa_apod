@@ -18,6 +18,7 @@
 		8D53CBFC200581FA008B7C6B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D53CBFB200581FA008B7C6B /* Network.swift */; };
 		8DE4F93F200586BD00A78CBC /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4F93E200586BD00A78CBC /* Helper.swift */; };
 		8DE4F941200588A200A78CBC /* PicOfTheDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4F940200588A200A78CBC /* PicOfTheDay.swift */; };
+		8DE4F9432005DC7F00A78CBC /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4F9422005DC7F00A78CBC /* Spinner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		8D53CBFB200581FA008B7C6B /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		8DE4F93E200586BD00A78CBC /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		8DE4F940200588A200A78CBC /* PicOfTheDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicOfTheDay.swift; sourceTree = "<group>"; };
+		8DE4F9422005DC7F00A78CBC /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		8D53CBF320057DCE008B7C6B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8DE4F9422005DC7F00A78CBC /* Spinner.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				8D53CBD420057DC0008B7C6B /* AppDelegate.swift in Sources */,
 				8D53CBF820057E1D008B7C6B /* Config.swift in Sources */,
 				8DE4F93F200586BD00A78CBC /* Helper.swift in Sources */,
+				8DE4F9432005DC7F00A78CBC /* Spinner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,8 +7,18 @@
 //
 
 import Foundation
+import UIKit
 
 func showError(_ errorCode: Int) {
+  guard let view = UIApplication.shared.keyWindow?.rootViewController else { return }
+  let alertController = UIAlertController(title: "Ops!", message: "Something went wrong! Please launch the app again :(\nError code: \(errorCode)", preferredStyle: .alert)
+  let defaultAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in
+    exit(0)
+  }
+
+  alertController.addAction(defaultAction)
+  view.present(alertController, animated: true, completion: nil)
+  
   print(errorCode)
 }
 
