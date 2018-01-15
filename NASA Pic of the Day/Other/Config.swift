@@ -14,7 +14,7 @@ struct CONFIG {
     static let DOMAIN = "api.nasa.gov"
     static let PATH = "planetary"
     static let ENDPOINT = "apod"
-    static let API_KEY = "NNKOjkoul8n1CH18TWA9gwngW1s1SmjESPjNoUFo"
+    static let API_KEY = "" // Insert your NASA API key here
   }
   
   struct NOTIFICATION_KEYS {

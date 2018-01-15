@@ -1,7 +1,7 @@
 #  NASA Pic of the Day
 
 This is a sample app built to demonstrate basic compitency in iOS/Swift programming.
-The project was built for Scotiabank as a step in the application process for an iOS developer position
+The project was completed as part of a 1-day challenge.
 
 -----
 
